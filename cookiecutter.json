@@ -9,6 +9,8 @@
   "superuser_email": "admin@{{cookiecutter.project_name}}.{{cookiecutter.project_tld}}",
   "superuser_password": "password",
   "secret_key": "super_secret",
+  "ext_tsx": "tsx",
+  "stripe_key": "pk_asdfasdfasdfasfasdfasdf123123123",
    "_copy_without_render": [
         "frontend/node_modules/*",
         "frontend/public/*",

@@ -4,6 +4,7 @@ import React, { ReactNode, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Admin } from './admin';
 import { Home, Login, SignUp } from './views';
+import { Stripe } from './views/payment';
 import { logout } from './utils';
 
 const AppContainer = styled(Box)(() => ({
@@ -55,6 +56,14 @@ export const AppRoutes = () => {
         />
         <Route
           path='/signup'
+          element={
+            <App>
+              <SignUp />
+            </App>
+          }
+        />
+        <Route
+          path='/stripe'
           element={
             <App>
               <SignUp />
