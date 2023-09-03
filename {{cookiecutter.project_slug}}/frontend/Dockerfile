@@ -1,3 +1,4 @@
+# There are issues with node versions above 14 in some environments
 FROM node:14
 
 ADD package.json /package.json
