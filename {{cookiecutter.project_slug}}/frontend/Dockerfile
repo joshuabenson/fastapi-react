@@ -1,4 +1,5 @@
-FROM node:12
+# node versions above 14 failed build due to es11 features
+FROM node:14
 
 ADD package.json /package.json
 
